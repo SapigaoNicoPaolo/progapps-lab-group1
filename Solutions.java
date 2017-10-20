@@ -1,6 +1,4 @@
 //add solutions here
-import java.util.Scanner;
-
 public class Solutions{
 
 	public static void main(String[] args) {

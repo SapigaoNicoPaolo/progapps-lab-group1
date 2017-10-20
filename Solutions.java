@@ -75,7 +75,6 @@ public class Solutions{
 			f = !f;
 		}
 	}
-}
 
   public void Polyhedrons(String[] poly) {
        Scanner x = new Scanner(System.in);
@@ -109,6 +108,27 @@ public class Solutions{
        	}
        }
        System.out.print(total);
+  }
 
-}
+  public int King(String pos) {
+    String let[] = new String[2];
+    let = pos.split("");
+    String col = let[0];
+    int row = Integer.parseInt(let[1]);
+
+    if(row == 8 || row == 1){
+      if(col.equals("a") || col.equals("h")){
+        return 3;
+      }else{
+        return 5;
+      }
+    }else{
+      if(col.equals("a") || col.equals("h")){
+        retrun 5;
+      }else{
+        return 8;
+      }
+    }
+  }
+  
 }

@@ -16,4 +16,20 @@ public class Solutions{
 	    
 	    return n;
 	}
+
+	public int limakBob(int limak, int bob){
+    	int years = 0;
+    	int Limak = limak;
+        int Bob = bob;
+
+        while(Limak <= Bob){
+            Limak = Limak * 3;
+            Bob = Bob * 2;
+            counter++;
+        }
+
+
+        return years;
+    	}
+
 }

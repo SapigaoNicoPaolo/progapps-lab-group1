@@ -6,12 +6,12 @@ public class Solutions{
 		
 	}
 
-	public int NewYear(int n, int k){
-    
+	public int newYear(int n, int k){
+    	int total = 0;
 	    for(int i = 0; i <= n; i++){
 	        total += i * 5;
 	        if(total+k > 240 - ((i + 1)*5)){
-	            return 0;
+	            return i;
 	        }
 	    }
 	    
@@ -34,7 +34,7 @@ public class Solutions{
     	}
 
 	public static String antonAndDanik(int n,  String input) {
-       	 int winsA = 0;
+    	int winsA = 0;
         int winsD = 0;
         if(input.length() != n)
             System.exit(0);

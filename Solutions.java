@@ -76,3 +76,39 @@ public class Solutions{
 		}
 	}
 }
+
+  public void Polyhedrons(String[] poly) {
+       Scanner x = new Scanner(System.in);
+
+       int iterations;
+       int total = 0;
+       iterations = Integer.parseInt(x.nextLine());
+       String[] poly = new String[iterations];
+
+       for (int i = 0; i < iterations; i++){
+		poly[i] = x.nextLine();
+    }
+
+       for (int j = 0; j < iterations; j++){
+       	switch (poly[j]){
+       		case "Tetrahedron":
+       			total += 4;
+       			break;
+       		case "Cube":
+       			total += 6;
+       			break;
+       		case "Octahedron":
+       			total += 8;
+       			break;
+       		case "Dodecahedron":
+       			total += 12;
+       			break;
+       		case "Icosahedron":
+       			total += 20;
+       			break;
+       	}
+       }
+       System.out.print(total);
+
+}
+}

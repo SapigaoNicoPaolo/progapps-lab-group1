@@ -32,4 +32,23 @@ public class Solutions{
         return years;
     	}
 
+	public static String antonAndDanik(int n,  String input) {
+       	 int winsA = 0;
+        int winsD = 0;
+        if(input.length() != n)
+            System.exit(0);
+        for(int i = 0; i < n; i++) {
+            if(input.charAt(i) == 'A')
+                winsA++;
+            else if(input.charAt(i) == 'D')
+                winsD++;
+        }
+
+        if(winsA > winsD)
+            return "Anton";
+        else if(winsA < winsD)
+            return "Danik";
+        else
+            return "Friendship";
+        }
 }

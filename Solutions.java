@@ -1,4 +1,5 @@
 //add solutions here
+import java.util.*;
 public class Solutions{
 
 	public static void main(String[] args) {
@@ -51,4 +52,27 @@ public class Solutions{
         else
             return "Friendship";
         }
+
+	public void Hulk(String ih, String il){
+	int n = Integer.parseInt(kbd.nextLine());
+	boolean f = false;
+	String ih = "I hate";
+	String il = "I love";
+
+	while(n-- > 0){
+		if(f){
+			System.out.print(il);
+		}else{
+			System.out.print(ih);
+		}
+
+			if(n != 0){
+				System.out.print(" that ");
+			}else{
+				System.out.print(" it");
+			}
+
+			f = !f;
+		}
+	}
 }

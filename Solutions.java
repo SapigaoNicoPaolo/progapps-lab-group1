@@ -130,5 +130,22 @@ public class Solutions{
       }
     }
   }
+    
+  public void Pythagorean(long n){
+		Scanner sc = new Scanner(System.in);
+		try {
+			n = sc.nextLong();
+			if (n < 3)
+				System.out.println(-1);
+			else if (n % 2 == 0)
+				System.out.println((n * n / 4 - 1) + " " + (n * n / 4 + 1));
+			else
+				System.out.println((n * n) / 2 + " " + ((n * n) / 2 + 1)); 
+												 
+		} catch (InputMismatchException x) {
+			System.out.println("InputMismatchException x :" + x.toString());
+		}
+		sc.close();
+  }
   
 }

@@ -3,7 +3,7 @@ import java.util.*;
 public class Solutions{
 
 	public static void main(String[] args) {
-		
+
 	}
 
 	public int newYear(int n, int k){
@@ -14,7 +14,7 @@ public class Solutions{
 	            return i;
 	        }
 	    }
-	    
+
 	    return n;
 	}
 
@@ -130,7 +130,7 @@ public class Solutions{
       }
     }
   }
-    
+
   public void Pythagorean(long n){
 		Scanner sc = new Scanner(System.in);
 		try {
@@ -140,12 +140,24 @@ public class Solutions{
 			else if (n % 2 == 0)
 				System.out.println((n * n / 4 - 1) + " " + (n * n / 4 + 1));
 			else
-				System.out.println((n * n) / 2 + " " + ((n * n) / 2 + 1)); 
-												 
+				System.out.println((n * n) / 2 + " " + ((n * n) / 2 + 1));
+
 		} catch (InputMismatchException x) {
 			System.out.println("InputMismatchException x :" + x.toString());
 		}
 		sc.close();
   }
   
+ public static int finalpomote(int lem, int app, int pea){
+      int count = 0;
+      while(lem>0 && app>1 && pea>3){
+          count = count+1;
+          lem = lem-1;
+          app = app-2;
+          pea = pea-4;
+      }
+      count = count + count*2 + count*4;
+      return count;
+  }
+
 }
